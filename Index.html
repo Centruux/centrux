@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrux</title>
+    <link rel="Shortcut Icon" href="Images/LogoBlanc1.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+    <!---------------------------
+    Header
+    ----------------------------->
+    <header>
+
+        <!---Logo Header--->
+        <div class="site-logo">
+            <a href="Index.html"><img src="Images/LogoBlanc1.png" alt="Logo Centrux"></a>
+        </div>
+
+        <!---Centrux Header--->
+        <div class="Titre-centrux">
+            <H1>Centrux</H1>
+            <p>Michaël Vanvelthem</p>
+        </div>
+
+        <!---Nav Header--->
+        <div class="navigation-menu">
+
+            <button id="NavOvni" aria-label="Menu">
+                <img src="Images/p1_ovni.png" alt="Menu Ovni" class="ovni-img">
+            </button>
+
+            <nav id="side-menu">
+                <div class="menu-panel">
+                    <p>Menu</p>
+                    <ul class="menu-links">
+                        <li><a href="Index.html#projets">Projets</a></li>
+                        <li><a href="Index.html#dessins">Dessins</a></li>
+                        <li><a href="Index.html#graphisme">Graphisme</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <script>
+            const ovni = document.getElementById("NavOvni");
+            const menu = document.getElementById("side-menu");
+
+            ovni.addEventListener("click", () => {
+                ovni.classList.toggle("active");
+                menu.classList.toggle("open");
+
+                const isOpen = menu.classList.contains("open");
+                menu.setAttribute("aria-hidden", !isOpen);
+            });
+        </script>
+
+    </header>
+
+    <!---------------------------
+    Contenu principal page d'accueil/Hero
+    ----------------------------->
+    <main class="hero">
+
+        <!---Boutons hero--->
+        <section class="Boutons-sections">
+            <a href="#projets" class="section-btn">
+                <img src="Images/p1-IllustrationsProjets.png" alt="Pages de BD, Fanzine ouverte." class="btn-img">
+                <span class="btn-label">
+                    <h2>Projets</h2>
+                </span>
+            </a>
+
+            <a href="#dessins" class="section-btn">
+                <img src="Images/p1-IllustrationsDessins.png" alt="Crayon croquant des lignes abstraites."
+                    class="btn-img">
+                <span class="btn-label">
+                    <h2>Dessins</h2>
+                </span>
+            </a>
+
+            <a href="#graphisme" class="section-btn">
+                <img src="Images/p1-IllustrationsGraphisme.png" alt="Plume d'Illustrator tirant des vagues."
+                    class="btn-img">
+                <span class="btn-label">
+                    <h2>Graphisme</h2>
+                </span>
+            </a>
+        </section>
+
+        <!---Illustration Hero--->
+        <img src="Images/p1_HeroClair.png" alt="Hero">
+
+    </main>
+
+    <!---------------------------
+Bas du Hero
+----------------------------->
+
+    <div class="bas-du-onepage">
+        <!---Projets--->
+        <section id="projets">
+            <h2>Projets</h2>
+
+            <section class="duo-section">
+                <!--Colonne G-->
+                <div class="colonne">
+                    <a href="Projets.html#bd-fanzine">
+                        <img src="Images/p2_zines.png" alt="Illustration BD/Fanzine" class="section-illu">
+                        <h3>BD / Fanzine</h3>
+                    </a>
+                </div>
+
+                <!--Colonne D-->
+                <div class="colonne">
+                    <a href="Projets.html#pages-en-vrac">
+                        <img src="Images/p2_pageenvracs.png" alt="" class="section-illu">
+                        <h3>Pages en vrac</h3>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <!-- CAROUSEL -->
+                <section class="projets-carousel">
+                    <button class="prev">‹</button>
+
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <!-- Varen -->
+                            <img src="Images/Exemples/planches/177.png">
+                            <img src="Images/Exemples/planches/178.png">
+                            <img src="Images/Exemples/planches/179.png">
+                            <img src="Images/Exemples/planches/180.png">
+                            <img src="Images/Exemples/planches/181.png">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <!-- bric a brac -->
+                            <img src="Images/Exemples/planches/164.png">
+                            <img src="Images/Exemples/planches/165.png">
+                            <img src="Images/Exemples/planches/81.png">
+                            <img src="Images/Exemples/planches/95.png">
+                            <img src="Images/Exemples/planches/161.png">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <!-- bric a brac -->
+                            <img src="Images/Exemples/planches/116.png">
+                            <img src="Images/Exemples/planches/123.png">
+                            <img src="Images/Exemples/planches/124.png">
+                            <img src="Images/Exemples/planches/57.png">
+                            <img src="Images/Exemples/planches/51.png">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <!-- bric a brac Lineless -->
+                            <img src="Images/Exemples/planches/15.png">
+                            <img src="Images/Exemples/planches/33.png">
+                            <img src="Images/Exemples/planches/1.png">
+                            <img src="Images/Exemples/planches/98.png">
+                            <img src="Images/Exemples/planches/146.png">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <!-- bric a brac atelier-->
+                            <img src="Images/Exemples/planches/63.png">
+                            <img src="Images/Exemples/planches/64.png">
+                            <img src="Images/Exemples/planches/65.png">
+                            <img src="Images/Exemples/planches/66.png">
+                            <img src="Images/Exemples/planches/152.png">
+                        </div>
+
+                        <div class="carousel-slide">
+                            <!-- bric a brac atelier-->
+                            <img src="Images/Exemples/planches/153.png">
+                            <img src="Images/Exemples/planches/154.png">
+                            <img src="Images/Exemples/planches/155.png">
+                            <img src="Images/Exemples/planches/156.png">
+                            <img src="Images/Exemples/planches/157.png">
+                        </div>
+                    </div>
+
+                    <button class="next">›</button>
+                </section>
+
+            </section>
+    </div>
+
+    <!---Dessins--->
+    <section id="dessins">
+        <h2>Dessins</h2>
+        <section class="quatre-colonnes">
+            <div class="colonne-dessins">
+                <a href="Projets.html#portfolio" class="dessin-btn">
+                    <img src="Images/p3_Square1.png" alt="">
+                    <h3>Portfolio</h3>
+                </a>
+            </div>
+
+            <div class="colonne-dessins">
+                <a href="Projets.html#croquis" class="dessin-btn">
+                    <img src="Images/p3_Square2.png" alt="">
+                    <h3>Croquis</h3>
+                </a>
+            </div>
+
+            <div class="colonne-dessins">
+                <a href="Projets.html#commissions" class="dessin-btn">
+                    <img src="Images/p3_Square3.png" alt="">
+                    <h3>Commissions</h3>
+                </a>
+            </div>
+
+            <div class="colonne-dessins">
+                <a href="Projets.html#recherches" class="dessin-btn">
+                    <img src="Images/p3_Square4.png" alt="">
+                    <h3>Charadesign</h3>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!---Graphisme--->
+    <section id="graphisme">
+        <h2>Graphisme</h2>
+
+        <section class="trio-section">
+            <a href="Projets.html#logo" class="graphisme-btn">
+                <img src="Images/p4_Logo.png" alt="">
+                <h3>Logos</h3>
+            </a>
+
+            <a href="Projets.html#mise-en-page" class="graphisme-btn">
+                <img src="Images/p4_Compute.png" alt="">
+                <h3>Mise en page</h3>
+            </a>
+
+            <a href="Projets.html#animation" class="graphisme-btn">
+                <img src="Images/p4_Anim.png" alt="">
+                <h3>Animation</h3>
+            </a>
+        </section>
+    </section>
+
+
+    <!---------------------------
+    Footer
+    ----------------------------->
+    <footer class="site-footer">
+        <p>© 2026 — Michaël Vanvelthem</p>
+        <p>Illustration · Bande dessinée · Graphisme</p>
+    </footer>
+    </div>
+
+
+    <!---JavaScript. Note, je SAIS que le carousel est cassé quand on appuie sur la fleche de gauche, je m'arrache les cheveux à essayer de le reparer sans utiliser de bibliotheques. Comme je n'ai toujours pas trouvé de solutions, je prefere laisser ça de coté et attendre une revelation divine.--->
+    <script>
+        let isAnimating = false;
+
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.querySelector('.projets-carousel .prev');
+        const nextBtn = document.querySelector('.projets-carousel .next');
+
+        let index = 0;
+
+        function updateSlides(newIndex, direction) {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            slides.forEach(slide => {
+                slide.classList.remove('active', 'prev');
+            });
+
+            if (direction === 'next') {
+                slides[index].classList.add('prev');
+            }
+
+            if (direction === 'prev') {
+                slides[newIndex].classList.add('prev');
+            }
+
+            slides[newIndex].classList.add('active');
+            index = newIndex;
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 500);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const newIndex = (index + 1) % slides.length;
+            updateSlides(newIndex, 'next');
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const newIndex = (index - 1 + slides.length) % slides.length;
+            updateSlides(newIndex, 'prev');
+        });
+
+        slides[index].classList.add('active');
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            document.querySelectorAll(".carousel-slide img").forEach(img => {
+                img.addEventListener("click", () => {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add("active");
+                });
+            });
+
+            lightbox.addEventListener("click", () => {
+                lightbox.classList.remove("active");
+            });
+        });
+    </script>
+
+
+
+    <div id="lightbox">
+        <img id="lightbox-img" src="">
+    </div>
+
+</body>
+
+</html>
