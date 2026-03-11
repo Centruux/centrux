@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrux</title>
+    <link rel="Shortcut Icon" href="Images/LogoBlanc1.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Contact.css">
+</head>
+
+<body>
+
+    <!---------------------------
+    Header
+    ----------------------------->
+    <header>
+
+        <!---Logo--->
+        <div class="site-logo">
+            <a href="Index.html"><img src="Images/LogoBlanc1.png" alt="Logo Centrux"></a>
+        </div>
+
+        <!---Centrux--->
+        <div class="Titre-centrux">
+            <H1>Centrux</H1>
+            <p>Michaël Vanvelthem</p>
+        </div>
+
+        <!---Nav--->
+        <div class="navigation-menu">
+
+            <button id="NavOvni" aria-label="Menu">
+                <img src="Images/p1_ovni.png" alt="Menu Ovni" class="ovni-img">
+            </button>
+
+            <nav id="side-menu">
+                <div class="menu-panel">
+                    <p>Menu</p>
+                    <ul class="menu-links">
+                        <li><a href="Index.html#projets">Projets</a></li>
+                        <li><a href="Index.html#dessins">Dessins</a></li>
+                        <li><a href="Index.html#graphisme">Graphisme</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <script>
+            const ovni = document.getElementById("NavOvni");
+            const menu = document.getElementById("side-menu");
+
+            ovni.addEventListener("click", () => {
+                ovni.classList.toggle("active");
+                menu.classList.toggle("open");
+
+                const isOpen = menu.classList.contains("open");
+                menu.setAttribute("aria-hidden", !isOpen);
+            });
+        </script>
+    </header>
+
+    <!---------------------------
+    Main
+    ----------------------------->
+    <main class="contact-page">
+
+        <!-- Colonne gauche sur desktop, haut sur laptop -->
+        <section class="contact-left">
+            <div class="contact-box">
+                <p>Contactez-moi !</p>
+
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:centrux.contact@gmail.com"><img src="Images/p5_Mail.png" alt=""></a>
+                        <span>centrux.contact@gmail.com</span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/centrux"><img src="Images/p5_Instagram.png" alt=""></a>
+                        <span>@centrux</span>
+                    </li>
+                    <li>
+                        <a href="https://www.tumblr.com/centruxx"><img src="Images/p5_Tumblr.png" alt=""></a>
+                        <span>@centruxx</span>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="Images/p5_Oiseau.png" alt="" class="contact-illu">
+        </section>
+
+        <!-- Colonne droite sur desktop, bas sur laptop -->
+        <section class="contact-right">
+            <div class="bio-box">
+                <div class="bio-content">
+                    <img src="Images/p5_avatar.png" alt="" class="avatar">
+                    <h2 class="quisuisje">Qui suis-je</h2>
+
+                    <p>
+                        Je m'appelle <b>Michaël VANVELTHEM</b> et je suis un artiste bruxellois spécialisé dans la bande
+                        dessinée et dans l'illustration.
+                    </p>
+                    <p>
+                        J'apprécie particulièrement travailler sur des univers de science-fiction, de medieval
+                        fantasy, parfois en les mélangeant, et sur les contenus queers et pirates.
+                    </p>
+                    <p>
+                        Mes compétences sont les suivantes, l'illustration digitale, la création de bandes dessinées et
+                        de storyboards, le charadesign, la narration, la modélisation 3D, et la maîtrise des
+                        logiciels de
+                        la suite Adobe.
+                    </p>
+
+
+                    <h3>Formations :</h3>
+                    <ul>
+                        <li><b>2019–2021</b> : Arts plastiques - IATA</li>
+                        <li><b>2021–2023</b> : Infographie (CQ6) - IATA</li>
+                        <li><b>2023–2025</b> : Bande dessinée – ESA St-Lux BXL</li>
+                        <li><b>2025-2026</b> : Graphisme – ESA St-Lux BXL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!---------------------------
+    Footer
+    ----------------------------->
+    <footer class="site-footer">
+        <p>© 2026 — Michaël Vanvelthem</p>
+        <p>Illustration · Bande dessinée · Graphisme</p>
+    </footer>
+
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrux</title>
+    <link rel="Shortcut Icon" href="Images/LogoBlanc1.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+    <!---------------------------
+    Header
+    ----------------------------->
+    <header>
+
+        <!---Logo--->
+        <div class="site-logo">
+            <a href="Index.html"><img src="Images/LogoBlanc1.png" alt="Logo Centrux"></a>
+        </div>
+
+        <!---Centrux--->
+        <div class="Titre-centrux">
+            <H1>Centrux</H1>
+            <p>Michaël Vanvelthem</p>
+        </div>
+
+        <!---Nav--->
+        <div class="navigation-menu">
+
+            <button id="NavOvni" aria-label="Menu">
+                <img src="Images/p1_ovni.png" alt="Menu Ovni" class="ovni-img">
+            </button>
+
+            <nav id="side-menu">
+                <div class="menu-panel">
+                    <p>Menu</p>
+                    <ul class="menu-links">
+                        <li><a href="Index.html#projets">Projets</a></li>
+                        <li><a href="Index.html#dessins">Dessins</a></li>
+                        <li><a href="Index.html#graphisme">Graphisme</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <script>
+            const ovni = document.getElementById("NavOvni");
+            const menu = document.getElementById("side-menu");
+
+            ovni.addEventListener("click", () => {
+                ovni.classList.toggle("active");
+                menu.classList.toggle("open");
+
+                const isOpen = menu.classList.contains("open");
+                menu.setAttribute("aria-hidden", !isOpen);
+            });
+        </script>
+    </header>
+
+    <!---------------------------
+    Main
+    ----------------------------->
+    <main class="page-projets">
+        <!---Projets--->
+        <section id="projets">
+            <h2>Projets</h2>
+            <section id="bd-fanzine">
+                <h3>BD/Fanzine</h3>
+                <div>
+                    <!---Varen--->
+                    <h4>Varen</h4>
+                    <img src="Images/Exemples/planches/couv/Varen2.png" alt="Couverture Varen" class="clic">
+                    <!---Carousel--->
+                    <section class="projets-carousel">
+                        <button class="prev">‹</button>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="Images/Exemples/Planches/Varen-p1.png">
+                                <img src="Images/Exemples/Planches/Varen-p2.png">
+                                <img src="Images/Exemples/Planches/Varen-p3.png">
+                                <img src="Images/Exemples/Planches/Varen-p4.png">
+                                <img src="Images/Exemples/Planches/Varen-p5.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Varen-p6.png">
+                                <img src="Images/Exemples/Planches/Varen-p7.png">
+                                <img src="Images/Exemples/Planches/Varen-p8.png">
+                                <img src="Images/Exemples/Planches/Varen-p9.png">
+                                <img src="Images/Exemples/Planches/Varen-p10.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Varen-p11.png">
+                                <img src="Images/Exemples/Planches/Varen-p12.png">
+                                <img src="Images/Exemples/Planches/Varen-p13.png">
+                                <img src="Images/Exemples/Planches/Varen-p14.png">
+                                <img src="Images/Exemples/Planches/Varen-p15.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Varen-p16.png">
+                                <img src="Images/Exemples/Planches/Varen-p17.png">
+                                <img src="Images/Exemples/Planches/Varen-p18.png">
+                                <img src="Images/Exemples/Planches/Varen-p19.png">
+                                <img src="Images/Exemples/Planches/Varen-p20.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Varen-p21.png">
+                                <img src="Images/Exemples/Planches/Varen-p22.png">
+                                <img src="Images/Exemples/Planches/Varen-p23.png">
+                                <img src="Images/Exemples/Planches/Varen-p24.png">
+                                <img src="Images/Exemples/Planches/Varen-p25.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Varen-p26.png">
+                                <img src="Images/Exemples/Planches/Varen-p27.png">
+                                <img src="Images/Exemples/Planches/Varen-p28.png">
+                                <img src="Images/Exemples/Planches/Varen-p29.png">
+                                <img src="Images/Exemples/Planches/Varen-p30.png">
+                            </div>
+                        </div>
+
+                        <button class="next">›</button>
+                    </section>
+                </div>
+                <div>
+                    <!---DBD--->
+                    <h4>Dolow Bagalen Don · Poisonous stars</h4>
+                    <img src="Images/Exemples/planches/couv/DBD1.png" alt="Couverture DBD" class="clic">
+                    <!---Carousel--->
+                    <section class="projets-carousel">
+                        <button class="prev">‹</button>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="Images/Exemples/Planches/Yerepage4.png">
+                                <img src="Images/Exemples/Planches/Yerepage5.png">
+                                <img src="Images/Exemples/Planches/Yerepage6.png">
+                                <img src="Images/Exemples/Planches/Yerepage7.png">
+                                <img src="Images/Exemples/Planches/Yerepage8.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Yerepage9.png">
+                                <img src="Images/Exemples/Planches/Yerepage10.png">
+                                <img src="Images/Exemples/Planches/Yerepage11.png">
+                                <img src="Images/Exemples/Planches/Yerepage12.png">
+                                <img src="Images/Exemples/Planches/Yerepage13.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Yerepage14.png">
+                                <img src="Images/Exemples/Planches/Yerepage15.png">
+                                <img src="Images/Exemples/Planches/Yerepage16.png">
+                                <img src="Images/Exemples/Planches/Yerepage17.png">
+                                <img src="Images/Exemples/Planches/Yerepage18.png">
+                            </div>
+                            <button class="next">›</button>
+                    </section>
+                </div>
+                <div>
+                    <!---Scolaire--->
+                    <h4>BD scolaires...</h4>
+                    <!---Carousel--->
+                    <section class="projets-carousel">
+                        <button class="prev">‹</button>
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="Images/Exemples/Planches/final.png">
+                                <img src="Images/Exemples/Planches/final2.png">
+                                <img src="Images/Exemples/Planches/final3.png">
+                                <img src="Images/Exemples/Planches/final4.png">
+                                <img src="Images/Exemples/Planches/final5.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/final6.png">
+                                <img src="Images/Exemples/Planches/final7.png">
+                                <img src="Images/Exemples/Planches/final8.png">
+                                <img src="Images/Exemples/Planches/final9.png">
+                                <img src="Images/Exemples/Planches/Atelier1.png">
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="Images/Exemples/Planches/Atelier2.png">
+                                <img src="Images/Exemples/Planches/Atelier3.png">
+                                <img src="Images/Exemples/Planches/Atelier4.png">
+                                <img src="Images/Exemples/Planches/1AtelierDecouverte.png">
+                                <img src="Images/Exemples/Planches/2AtelierDecouverte.png">
+                            </div>
+                            <button class="next">›</button>
+                    </section>
+                </div>
+                <div>
+                    <!---Scrogneugneu--->
+                    <h4>Scrogneugneu</h4>
+                    <img src="Images/Exemples/planches/couv/Charadesign Scrogneugneu.png"
+                        alt="Charaddesign Scrogneugneu" class="clic">
+                    <!---Petit Carousel--->
+                    <div class="cinqimagesOnly">
+                        <section class="projets-carousel">
+                            <button class="prev">‹</button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="Images/Exemples/Planches/1Scrogneugneu.png">
+                                    <img src="Images/Exemples/Planches/2Scrogneugneu.png">
+                                    <img src="Images/Exemples/Planches/3Scrogneugneu.png">
+                                    <img src="Images/Exemples/Planches/4Scrogneugneu.png">
+                                    <img src="Images/Exemples/Planches/5Scrogneugneu.png">
+                                </div>
+                                <button class="next">›</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div>
+                    <!---En appart'é--->
+                    <h4>En Appart'é</h4>
+                    <div class="enapparte">
+                        <img src="Images/Exemples/planches/couv/1EA.png" alt="Couverture EA" class="clic">
+                        <img src="Images/Exemples/planches/couv/3EA.png" alt="Couverture EA" class="clic">
+                        <img src="Images/Exemples/planches/couv/5EA.png" alt="Couverture EA" class="clic">
+                    </div>
+                    <!---Petit Carousel--->
+                    <div class="cinqimagesOnly">
+                        <section class="projets-carousel">
+                            <button class="prev">‹</button>
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="Images/Exemples/Planches/1TEA.png">
+                                    <img src="Images/Exemples/Planches/2TEA.png">
+                                    <img src="Images/Exemples/Planches/3TEA.png">
+                                    <img src="Images/Exemples/Planches/4TEA.png">
+                                    <img src="Images/Exemples/Planches/5TEA.png">
+                                </div>
+                                <button class="next">›</button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!---En vrac--->
+                    <section id="pages-en-vrac">
+                        <h3>Pages en vrac</h3>
+                        <div class="en-vrac-images">
+                            <img src="Images/Exemples/planches/1.png" alt="Planche 1 de Willo" class="clic">
+                            <img src="Images/Exemples/planches/81.png" alt="Planche du chat et du pirate" class="clic">
+                            <img src="Images/Exemples/planches/165.png" alt="Planche HDA" class="clic">
+                        </div>
+                        <div class="en-vrac-images">
+                            <img src="Images/Exemples/planches/33.png" alt="Planche ACDU" class="clic">
+                            <img src="Images/Exemples/planches/95.png" alt="Planche desert" class="clic">
+                            <img src="Images/Exemples/planches/97.png" alt="Planche desert 2" class="clic">
+                        </div>
+                        <div class="en-vrac-images">
+                            <img src="Images/Exemples/planches/124.png" alt="Planche Reve" class="clic">
+                            <img src="Images/Exemples/planches/123.png" alt="Zine de la classe" class="clic">
+                            <img src="Images/Exemples/planches/109.png" alt="Planche Ema" class="clic">
+                        </div>
+                        <div class="en-vrac-images">
+                            <img src="Images/Exemples/planches/146.png" alt="Planche Hogwarts" class="clic">
+                            <img src="Images/Exemples/planches/164.png" alt="Matthew 4:3-4" class="clic">
+                            <img src="Images/Exemples/planches/39.png" alt="Goodbye Camille et Arthur" class="clic">
+                        </div>
+                    </section>
+            </section>
+
+            <!---Dessins--->
+            <section id="dessins">
+                <h2>Dessins</h2>
+                <section id="portfolio">
+                    <h3>Portfolio</h3>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/163.png" alt="" class="clic">
+                        <img src="Images/Exemples/150.png" alt="" class="clic">
+                        <img src="Images/Exemples/162.png" alt="" class="clic">
+                        <img src="Images/Exemples/119.png" alt="" class="clic">
+                        <img src="Images/Exemples/127.png" alt="" class="clic">
+                        <img src="Images/Exemples/120.png" alt="" class="clic">
+                        <img src="Images/Exemples/118.png" alt="" class="clic">
+                        <img src="Images/Exemples/111.png" alt="" class="clic">
+                        <img src="Images/Exemples/104.png" alt="" class="clic">
+                        <img src="Images/Exemples/103.png" alt="" class="clic">
+                        <img src="Images/Exemples/107.png" alt="" class="clic">
+                        <img src="Images/Exemples/102.png" alt="" class="clic">
+                        <img src="Images/Exemples/101.png" alt="" class="clic">
+                        <img src="Images/Exemples/100.png" alt="" class="clic">
+                        <img src="Images/Exemples/99.png" alt="" class="clic">
+                        <img src="Images/Exemples/93.png" alt="" class="clic">
+                        <img src="Images/Exemples/89.png" alt="" class="clic">
+                        <img src="Images/Exemples/82.png" alt="" class="clic">
+                        <img src="Images/Exemples/83.png" alt="" class="clic">
+                        <img src="Images/Exemples/69.png" alt="" class="clic">
+                        <img src="Images/Exemples/60.png" alt="" class="clic">
+                        <img src="Images/Exemples/48.png" alt="" class="clic">
+                        <img src="Images/Exemples/45.png" alt="" class="clic">
+                        <img src="Images/Exemples/44.png" alt="" class="clic">
+                        <img src="Images/Exemples/43.png" alt="" class="clic">
+                        <img src="Images/Exemples/42.png" alt="" class="clic">
+                        <img src="Images/Exemples/41.png" alt="" class="clic">
+                        <img src="Images/Exemples/38.png" alt="" class="clic">
+                        <img src="Images/Exemples/35.png" alt="" class="clic">
+                        <img src="Images/Exemples/37.png" alt="" class="clic">
+                        <img src="Images/Exemples/31.png" alt="" class="clic">
+                        <img src="Images/Exemples/30.png" alt="" class="clic">
+                        <img src="Images/Exemples/27.png" alt="" class="clic">
+                        <img src="Images/Exemples/26_1.png" alt="" class="clic">
+                        <img src="Images/Exemples/23-2.png" alt="" class="clic">
+                        <img src="Images/Exemples/17.png" alt="" class="clic">
+                        <img src="Images/Exemples/13.png" alt="" class="clic">
+                        <img src="Images/Exemples/11.png" alt="" class="clic">
+                        <img src="Images/Exemples/10.png" alt="" class="clic">
+                        <img src="Images/Exemples/9.png" alt="" class="clic">
+                        <img src="Images/Exemples/8.png" alt="" class="clic">
+                        <img src="Images/Exemples/7.png" alt="" class="clic">
+                        <img src="Images/Exemples/1.png" alt="" class="clic">
+                    </div>
+                </section>
+                <section id="croquis">
+                    <h3>Croquis</h3>
+                    <h4>Chats</h4>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/70.png" alt="" class="clic">
+                        <img src="Images/Exemples/71.png" alt="" class="clic">
+                        <img src="Images/Exemples/72.png" alt="" class="clic">
+                        <img src="Images/Exemples/73.png" alt="" class="clic">
+                        <img src="Images/Exemples/74.png" alt="" class="clic">
+                        <img src="Images/Exemples/76.png" alt="" class="clic">
+                        <img src="Images/Exemples/77.png" alt="" class="clic">
+                        <img src="Images/Exemples/78.png" alt="" class="clic">
+                    </div>
+                    <h4>Robert</h4>
+                    <div class="Croquis-images">
+                        <img src="Images/Exemples/Page0001.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0004.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0007.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page00012.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0013.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0014.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0019.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0020.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0021.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0040.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0049.png" alt="" class="clic">
+                    </div>
+                    <h4>Carnets de croquis</h4>
+                    <div class="Croquis-images">
+                        <img src="Images/Exemples/Page.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0002.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0003.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0005.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0006.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0008.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0009.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0010.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0011.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0015.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0016.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0017.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0018.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0022.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0023.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0024.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0025.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0026.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0027.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0028.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0029.png" alt="" class="clic">
+                        <img src="Images/Exemples/92.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0030.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0031.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0032.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0035.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0037.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0038.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0039.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0041.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0043.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0045.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0046.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0047.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0048.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0050.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0051.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0052.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0053.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0054.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0055.png" alt="LOLA" class="clic">
+                        <img src="Images/Exemples/Page0056.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0057.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0058.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0059.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0060.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0062.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0063.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0064.png" alt="" class="clic">
+                        <img src="Images/Exemples/Page0066.png" alt="" class="clic">
+                    </div>
+
+                </section>
+                <section id="commissions">
+                    <h3>Commissions, commandes, Artfights,...</h3>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/14.png" alt="Esperantiste" class="clic">
+                        <img src="Images/Exemples/3.png" alt="Aurelia MLP" class="clic">
+                        <img src="Images/Exemples/118.png" alt="CESL" class="clic">
+                        <img src="Images/Exemples/136.png" alt="Pokemons" class="clic">
+                        <img src="Images/Exemples/55.png" alt="Ellis" class="clic">
+                        <img src="Images/Exemples/139.png" alt="" class="clic">
+                        <img src="Images/Exemples/150.png" alt="Carte Noel" class="clic">
+                        <img src="Images/Exemples/Dessins10.png" alt="Carte Noel" class="clic">
+                    </div>
+                </section>
+                <section id="recherches">
+                    <h3>Charadesign et recherches</h3>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/18.png" alt="" class="clic">
+                        <img src="Images/Exemples/28.png" alt="" class="clic">
+                        <img src="Images/Exemples/34.png" alt="" class="clic">
+                        <img src="Images/Exemples/141.png" alt="" class="clic">
+                        <img src="Images/Exemples/148.png" alt="" class="clic">
+                        <img src="Images/Exemples/142.png" alt="" class="clic">
+                        <img src="Images/Exemples/126.png" alt="" class="clic">
+                        <img src="Images/Exemples/128.png" alt="" class="clic">
+                        <img src="Images/Exemples/115.png" alt="" class="clic">
+                        <img src="Images/Exemples/110.png" alt="" class="clic">
+                        <img src="Images/Exemples/92.png" alt="" class="clic">
+                        <img src="Images/Exemples/50.png" alt="" class="clic">
+                        <img src="Images/Exemples/46.png" alt="" class="clic">
+                        <img src="Images/Exemples/5.png" alt="" class="clic">
+                        <img src="Images/Exemples/6.png" alt="" class="clic">
+                        <img src="Images/Exemples/106-1.png" alt="" class="clic">
+                        <img src="Images/Exemples/106-2.png" alt="" class="clic">
+                    </div>
+                </section>
+            </section>
+
+            <!---Graphisme--->
+            <section id="graphisme">
+                <h2>Graphisme</h2>
+                <!---Logo--->
+                <section id="logo">
+                    <h3>Logo</h3>
+                    <div class="Logo-images">
+                        <img src="Images/Exemples/Graphisme/Logo/BD.png" alt="">
+                        <img src="Images/Exemples/Graphisme/Logo/Logo_TBO_icon.png" alt="">
+                        <img src="Images/Exemples/Graphisme/Logo/LogoBlanc1.png" alt="">
+                        <img src="Images/Exemples/Graphisme/Logo/Yogasimple.png" alt="">
+                        <img src="Images/Exemples/Graphisme/Logo/LogoPinceau.png" alt="">
+                        <img src="Images/Exemples/Graphisme/Logo/LogoForet.png" alt="">
+                    </div>
+                </section>
+                <!---Mise en page--->
+                <section id="mise-en-page">
+                    <h3>Mise en page</h3>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/Graphisme/Mise en page/144.png" alt="" class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/Sky.png" alt="" class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/Electric.png" alt="" class="clic">
+                    </div>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/Graphisme/Mise en page/BonsPlans.jpg" alt="" class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/BonsPlans2.jpg" alt="" class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/BonsPlans3.jpg" alt="" class="clic">
+                    </div>
+                    <div class="Illustrations-images">
+                        <img src="Images/Exemples/Graphisme/Mise en page/7_AuCentruxDeLunivers_V2.png" alt=""
+                            class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/AfichesFinalesfilippo.png" alt="" class="clic">
+                        <img src="Images/Exemples/Graphisme/Mise en page/Screenshot 2025-08-01 153203.png" alt=""
+                            class="clic">
+                    </div>
+                </section>
+                <!---Animation--->
+                <section id="Animation">
+                    <h3>Animation</h3>
+
+                    <video controls>
+                        <source src="Images/Exemples/Graphisme/Animation/Animcomplete.mp4" type="video/mp4">
+                    </video>
+
+                    <video controls>
+                        <source src="Images/Exemples/Graphisme/Animation/Walkingaanim1.mp4" type="video/mp4">
+                    </video>
+
+                    <video controls>
+                        <source src="Images/Exemples/Graphisme/Animation/Walkinganim2.mp4" type="video/mp4">
+                    </video>
+
+                    <video controls>
+                        <source src="Images/Exemples/Graphisme/Animation/Animsketch.mp4" type="video/mp4">
+                    </video>
+
+                    <video controls>
+                        <source src="Images/Exemples/Graphisme/Animation/GIF.mp4" type="video/mp4">
+                    </video>
+
+                </section>
+
+    </main>
+
+    <script>
+        document.querySelectorAll('.projets-carousel').forEach(carousel => {
+
+            let isAnimating = false;
+            let index = 0;
+
+            const slides = carousel.querySelectorAll('.carousel-slide');
+            const prevBtn = carousel.querySelector('.prev');
+            const nextBtn = carousel.querySelector('.next');
+
+            function updateSlides(newIndex, direction) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                slides.forEach(slide => {
+                    slide.classList.remove('active', 'prev');
+                });
+
+                if (direction === 'next') {
+                    slides[index].classList.add('prev');
+                }
+
+                if (direction === 'prev') {
+                    slides[newIndex].classList.add('prev');
+                }
+
+                slides[newIndex].classList.add('active');
+                index = newIndex;
+
+                setTimeout(() => {
+                    isAnimating = false;
+                }, 500);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                const newIndex = (index + 1) % slides.length;
+                updateSlides(newIndex, 'next');
+            });
+
+            prevBtn.addEventListener('click', () => {
+                const newIndex = (index - 1 + slides.length) % slides.length;
+                updateSlides(newIndex, 'prev');
+            });
+
+            slides[index].classList.add('active');
+        });
+    </script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            function enableLightbox(img) {
+                img.addEventListener("click", () => {
+                    lightboxImg.src = img.src;
+                    lightbox.classList.add("active");
+                });
+            }
+
+            document.querySelectorAll(".carousel-slide img").forEach(enableLightbox);
+
+            document.querySelectorAll("img.clic:not(.carousel-slide img)").forEach(enableLightbox);
+
+            lightbox.addEventListener("click", () => {
+                lightbox.classList.remove("active");
+            });
+        });
+    </script>
+
+    <div id="lightbox">
+        <img id="lightbox-img" src="">
+    </div>
+</body>
+
+<!---Footer--->
+<footer class="site-footer">
+    <p>© 2026 — Michaël Vanvelthem</p>
+    <p>Illustration · Bande dessinée · Graphisme</p>
+</footer>
+
+</html>
